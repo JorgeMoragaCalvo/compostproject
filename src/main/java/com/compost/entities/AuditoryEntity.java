@@ -10,10 +10,10 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
-//@Getter
-//@Setter
-//@AllArgsConstructor
-//@NoArgsConstructor
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @MappedSuperclass
 public abstract class AuditoryEntity {
 
@@ -33,5 +33,4 @@ public abstract class AuditoryEntity {
     public void preUpdate(){
         this.updateDate = LocalDateTime.now();
     }
-
 }
