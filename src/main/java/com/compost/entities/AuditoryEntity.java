@@ -22,6 +22,7 @@ public abstract class AuditoryEntity {
     private LocalDateTime removalDate;
     private boolean status;
 
+    /*
     @PrePersist
     public void prePersist(){
         this.creationDate = LocalDateTime.now();
@@ -33,4 +34,5 @@ public abstract class AuditoryEntity {
     public void preUpdate(){
         this.updateDate = LocalDateTime.now();
     }
+    */
 }
